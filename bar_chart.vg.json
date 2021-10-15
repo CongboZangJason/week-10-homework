@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "data": {
+        "values": [
+          {"type": "house", "price":6100000 }, {"type": "townhouse", "price": 172500}, {"type": "apartment", "price": 5000320}
+        ]
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "type", "type": "nominal"},
+        "y": {"field": "price", "type": "quantitative"}
+      } 
+}
